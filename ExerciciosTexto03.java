@@ -105,10 +105,10 @@ public class ExerciciosTexto03 {
 		tela.setVisible(true);
 	}
 	
-	public String e3_10() {
-		Date dataAtual = new Date();
-		SimpleDateFormat formatar = new SimpleDateFormat("EEEE, dd/MMMM/yyyy");
-		String dataFormatada = formatar.format(dataAtual);
-		return dataFormatada;
-	}
+	public String e3_10(String data1, String data2){
+        if (data1.compareTo(data2) > 0) {
+            return data1;
+        }
+        return data2;
+    }
 }
